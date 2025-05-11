@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <section className="container py-8 md:py-12 lg:py-16 mx-auto">
-          <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2 text-center">
+          <div className="flex flex-col items-center gap-2 text-center px-4 md:px-0">
             <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
               Your Quest Dashboard
             </h2>
@@ -22,7 +22,7 @@ export default function Home() {
           </div>
         </section>
         <section className="container py-8 md:py-12 lg:py-16 mx-auto">
-          <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2 text-center">
+          <div className="mx-auto flex max-w-[980px] flex-col items-center gap-2 text-center px-4 md:px-0">
             <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
               Available Tasks
             </h2>

@@ -77,7 +77,7 @@ export function TaskList() {
   const completedTasks = TASKS.filter(task => task.completed);
   
   return (
-    <Tabs defaultValue="all" className="w-full">
+    <Tabs defaultValue="all" className="w-full  px-4 md:px-0">
       <TabsList className="grid w-full grid-cols-4">
         <TabsTrigger value="all">All Tasks</TabsTrigger>
         <TabsTrigger value="social">Social</TabsTrigger>

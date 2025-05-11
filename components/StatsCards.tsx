@@ -14,7 +14,7 @@ import {
   
   export function StatsCards() {
     return (
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 px-4 md:px-0">
         <Card className="border-border/50 bg-card/95 backdrop-blur-sm transition-all hover:border-primary/20">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium">Total Rewards</CardTitle>
