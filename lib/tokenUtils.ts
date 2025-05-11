@@ -6,10 +6,10 @@ const network = 'devnet';
 const connection = new Connection(clusterApiUrl(network));
 
 // Your program's wallet (should be securely stored)
-const payer = Keypair.fromSecretKey(/* your secret key */);
+const payer = Keypair.fromSecretKey(new Uint8Array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]));
 
 // Token mint details
-let rewardTokenMint;
+let rewardTokenMint : PublicKey;
 const decimals = 9; // Standard for most tokens
 
 // Create the reward token (run once)
@@ -27,7 +27,7 @@ export async function initializeRewardToken() {
 }
 
 // Distribute rewards to user
-export async function distributeRewards(userWalletAddress, amount) {
+export async function distributeRewards(userWalletAddress: PublicKey, amount: number) {
   if (!rewardTokenMint) {
     throw new Error('Reward token not initialized');
   }
